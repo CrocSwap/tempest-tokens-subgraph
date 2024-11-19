@@ -1,0 +1,224 @@
+specVersion: 0.0.4
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: ERC20-1
+    network: scroll
+    source:
+      abi: ERC20
+      startBlock: 10719958
+      address: "0xb457f0f23F47209997A92fB69839268559358f3c"
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Token
+        - Account
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./src/mapping.ts
+  - kind: ethereum
+    name: ERC20-2
+    network: scroll
+    source:
+      abi: ERC20
+      startBlock: 10719958
+      address: "0xfbfD099B6D55c00aa10Bec7dAEbf0178d38d9B91"
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Token
+        - Account
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./src/mapping.ts
+  - kind: ethereum
+    name: ERC20-3
+    network: scroll
+    source:
+      abi: ERC20
+      startBlock: 10719958
+      address: "0x3E9E7861D68a82783FAfbaCaB21ea8F37231c56e"
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Token
+        - Account
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./src/mapping.ts
+  - kind: ethereum
+    name: ERC20
+    network: scroll
+    source:
+      abi: ERC20
+      startBlock: 10719958
+      address: "0x737C16b2394B5EC7AF405455F33fE7665c4e189C"
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Token
+        - Account
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./src/mapping.ts
+  - kind: ethereum
+    name: ERC20-4
+    network: scroll
+    source:
+      abi: ERC20
+      startBlock: 10719958
+      address: "0x155E8ED4B7b9CA79559Fd2E650FA3E5D48b524ca"
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Token
+        - Account
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./src/mapping.ts
+  - kind: ethereum
+    name: ERC20-5
+    network: scroll
+    source:
+      abi: ERC20
+      startBlock: 10719958
+      address: "0x9674d655bf1A456c441157a5E8c5fA4c144e21e8"
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Token
+        - Account
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./src/mapping.ts
+  - kind: ethereum
+    name: ERC20-6
+    network: scroll
+    source:
+      abi: ERC20
+      startBlock: 10719958
+      address: "0xB8404F9f06256c6d723d2A9c7304115efA63a6e4"
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Token
+        - Account
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./src/mapping.ts
+  - kind: ethereum
+    name: ERC20-7
+    network: scroll
+    source:
+      abi: ERC20
+      startBlock: 10719958
+      address: "0x965E23eA362f4B27a57645262f06f0E88b17A97C"
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Token
+        - Account
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./src/mapping.ts
+  - kind: ethereum
+    name: ERC20-8
+    network: scroll
+    source:
+      abi: ERC20
+      startBlock: 10719958
+      address: "0x36E90EEC432d9410999413ae53De7472Ea48A7f0"
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Token
+        - Account
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./src/mapping.ts
+  - kind: ethereum
+    name: ERC20-9
+    network: scroll
+    source:
+      abi: ERC20
+      startBlock: 10719958
+      address: "0x3E9E7861D68a82783FAfbaCaB21ea8F37231c56e"
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Token
+        - Account
+        - Balance
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./src/mapping.ts

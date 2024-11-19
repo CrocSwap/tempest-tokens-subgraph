@@ -1,0 +1,12 @@
+{
+  "name": "tempest-tokens-subgraph",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:CrocSwap/tempest-tokens-subgraph.git",
+  "author": "Douglas R. Colkitt <douglas.colkitt@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.89.0",
+    "@graphprotocol/graph-ts": "^0.35.1"
+  }
+}

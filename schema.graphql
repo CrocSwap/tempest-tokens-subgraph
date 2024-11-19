@@ -1,0 +1,32 @@
+type Token @entity {
+  id: ID!
+  symbol: String!
+  name: String!
+  decimals: Int!
+  totalSupply: BigDecimal!
+  address: String!
+}
+
+type Account @entity {
+  id: ID!
+  address: String!
+  balances: [Balance!]! @derivedFrom(field: "account")
+}
+
+type Balance @entity {
+  id: ID!
+  account: Account!
+  token: Token!
+  amount: BigDecimal!
+  blockNumber: BigInt!
+  timestamp: BigInt!
+}
+
+type BalanceUpdate @entity {
+  id: ID!
+  token: String!
+  account: String!
+  amount: BigDecimal!
+  blockNumber: BigInt!
+  timestamp: BigInt!
+}
