@@ -1,0 +1,11 @@
+query($skip: Int) {
+  balances(first: 1000, skip: $skip, orderBy: id) {
+    account{
+      address
+    },
+    token{
+      address
+    },
+    amount
+  }
+}

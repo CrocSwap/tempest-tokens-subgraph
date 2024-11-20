@@ -1,0 +1,18 @@
+query($minTime: BigInt!, $maxTime: BigInt!) {
+  balanceUpdates(
+    first: 1000
+    orderBy: timestamp
+    orderDirection: asc
+    where: {
+      timestamp_gte: $minTime
+      timestamp_lte: $maxTime
+    }
+  ) {
+    id
+    token
+    account
+    amount
+    blockNumber
+    timestamp
+  }
+}
